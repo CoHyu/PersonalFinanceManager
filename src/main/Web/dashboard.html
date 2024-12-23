@@ -1,0 +1,83 @@
+<!-- dashboard.html -->
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>账户管理</title>
+</head>
+<body>
+<div class="container">
+    <nav class="navbar">
+        <ul>
+            <li><a href="#myAccount" class="active">我的账户</a></li>
+            <li><a href="#recordBook">记账簿</a></li>
+            <li><a href="#record">记账记录</a></li>
+            <li><a href="#income">收入记录</a></li>
+            <li><a href="#expense">支出记录</a></li>
+        </ul>
+    </nav>
+
+    <div class="main-content">
+        <div id="myAccount" class="content">
+            <h2>我的账户</h2>
+            <p>这里显示账户相关信息。</p>
+        </div>
+
+        <div id="recordBook" class="content" style="display:none;">
+            <h2>记账簿</h2>
+            <form id="transactionForm">
+                <label for="amount">支付金额:</label>
+                <input type="number" id="amount" placeholder="金额" required>
+
+                <label for="typeSelect">选择收入还是支出:</label>
+                <select id="typeSelect" required>
+                    <option value="income">收入</option>
+                    <option value="expense">支出</option>
+                </select>
+
+                <label for="categorySelect">选择类型:</label>
+                <select id="categorySelect" required>
+                    <option value="salary">工资</option>
+                    <option value="investment">投资</option>
+                    <option value="shopping">购物</option>
+                    <option value="food">饮食</option>
+                    <option value="others">其他</option>
+                </select>
+
+                <label for="note">备注:</label>
+                <input type="text" id="note" placeholder="备注" required>
+
+                <label for="paymentMethod">支付方式选择:</label>
+                <select id="paymentMethod" required>
+                    <option value="cash">现金</option>
+                    <option value="creditCard">信用卡</option>
+                    <option value="debitCard">借记卡</option>
+                    <option value="online">线上支付</option>
+                </select>
+
+                <button type="submit">记录</button>
+            </form>
+        </div>
+
+        <div id="record" class="content" style="display:none;">
+            <h2>记账记录</h2>
+            <ul id="recordList"></ul>
+        </div>
+
+        <div id="income" class="content" style="display:none;">
+            <h2>收入记录</h2>
+            <ul id="incomeList"></ul>
+        </div>
+
+        <div id="expense" class="content" style="display:none;">
+            <h2>支出记录</h2>
+            <ul id="expenseList"></ul>
+        </div>
+    </div>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
