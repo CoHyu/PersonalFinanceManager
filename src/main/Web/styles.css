@@ -7,15 +7,15 @@ body {
 }
 
 .container {
-    display: flex; /* 使用 flexbox 处理布局 */
-    height: 100vh; /* 全高 */
+    display: flex;
+    height: 100vh;
 }
 
 .navbar {
-    width: 200px; /* 设置导航栏宽度 */
-    background-color: #007BFF; /* 导航栏背景颜色 */
+    width: 200px;
+    background-color: #007BFF;
     padding: 20px;
-    box-shadow: 2px 0 5px rgba(0, 0, 0, 0.1); /* 阴影 */
+    box-shadow: 2px 0 5px rgba(0, 0, 0, 0.1);
 }
 
 .navbar ul {
@@ -24,58 +24,84 @@ body {
 }
 
 .navbar ul li {
-    margin-bottom: 15px; /* 间距 */
+    margin-bottom: 15px;
 }
 
 .navbar ul li a {
-    color: white; /* 链接颜色 */
+    color: white;
     text-decoration: none;
-    display: block; /* 充满整个行 */
+    display: block;
     padding: 10px;
-    border-radius: 4px; /* 导航链接圆角 */
-    transition: background 0.3s; /* 背景颜色过渡 */
+    border-radius: 4px;
+    transition: background 0.3s;
 }
 
 .navbar ul li a:hover, .navbar ul li a.active {
-    background-color: #0056b3; /* 悬停和活跃链接的背景颜色 */
+    background-color: #0056b3;
 }
 
 .main-content {
-    flex-grow: 1; /* 右侧内容区自适应宽度 */
+    flex-grow: 1;
     padding: 20px;
-    overflow-y: auto; /* 使内容可滚动 */
+    overflow-y: auto;
+}
+
+.content {
+    display: none;
 }
 
 h2 {
-    color: #333; /* 字体颜色 */
+    color: #333;
 }
 
 form {
-    margin-top: 20px; /* 顶部间距 */
+    margin-top: 20px;
 }
 
 input[type="number"], input[type="text"], select {
     padding: 10px;
     margin: 10px 0;
-    border: 1px solid #ccc; /* 边框 */
-    border-radius: 4px; /* 圆角 */
-    width: 100%; /* 填满宽度 */
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    width: 100%;
 }
 
 button {
     padding: 10px;
-    background-color: #007BFF; /* 按钮背景颜色 */
-    color: white; /* 按钮文字颜色 */
+    background-color: #007BFF;
+    color: white;
     border: none;
-    border-radius: 4px; /* 圆角 */
-    cursor: pointer; /* 鼠标指针 */
-    width: 100%; /* 填满宽度 */
+    border-radius: 4px;
+    cursor: pointer;
+    width: 100%;
 }
 
 button:hover {
-    background-color: #0056b3; /* 悬停时的颜色 */
+    background-color: #0056b3;
 }
 
-.content {
-    display: none; /* 默认隐藏所有内容 */
+.record-container {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    margin-top: 20px;
+}
+
+.record-list {
+    list-style-type: none;
+    padding: 0;
+}
+
+.record-list li {
+    padding: 10px;
+    border-bottom: 1px solid #eee;
+}
+
+.record-list li:last-child {
+    border-bottom: none;
+}
+
+.record-list li:hover {
+    background-color: #f0f0f0;
 }

@@ -23,7 +23,7 @@ public class Main {
             UserService userService = new UserService(connection);
 
             // 控制台交互
-            Scanner scanner = new Scanner(System.in);
+            Scanner scanner = new Scanne(System.in);
             System.out.println("欢迎使用个人账目管理系统");
             System.out.println("1. 注册");
             System.out.println("2. 登录");
