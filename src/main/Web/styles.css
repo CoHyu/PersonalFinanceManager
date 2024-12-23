@@ -1,0 +1,81 @@
+/* styles.css */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    display: flex; /* 使用 flexbox 处理布局 */
+    height: 100vh; /* 全高 */
+}
+
+.navbar {
+    width: 200px; /* 设置导航栏宽度 */
+    background-color: #007BFF; /* 导航栏背景颜色 */
+    padding: 20px;
+    box-shadow: 2px 0 5px rgba(0, 0, 0, 0.1); /* 阴影 */
+}
+
+.navbar ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.navbar ul li {
+    margin-bottom: 15px; /* 间距 */
+}
+
+.navbar ul li a {
+    color: white; /* 链接颜色 */
+    text-decoration: none;
+    display: block; /* 充满整个行 */
+    padding: 10px;
+    border-radius: 4px; /* 导航链接圆角 */
+    transition: background 0.3s; /* 背景颜色过渡 */
+}
+
+.navbar ul li a:hover, .navbar ul li a.active {
+    background-color: #0056b3; /* 悬停和活跃链接的背景颜色 */
+}
+
+.main-content {
+    flex-grow: 1; /* 右侧内容区自适应宽度 */
+    padding: 20px;
+    overflow-y: auto; /* 使内容可滚动 */
+}
+
+h2 {
+    color: #333; /* 字体颜色 */
+}
+
+form {
+    margin-top: 20px; /* 顶部间距 */
+}
+
+input[type="number"], input[type="text"], select {
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #ccc; /* 边框 */
+    border-radius: 4px; /* 圆角 */
+    width: 100%; /* 填满宽度 */
+}
+
+button {
+    padding: 10px;
+    background-color: #007BFF; /* 按钮背景颜色 */
+    color: white; /* 按钮文字颜色 */
+    border: none;
+    border-radius: 4px; /* 圆角 */
+    cursor: pointer; /* 鼠标指针 */
+    width: 100%; /* 填满宽度 */
+}
+
+button:hover {
+    background-color: #0056b3; /* 悬停时的颜色 */
+}
+
+.content {
+    display: none; /* 默认隐藏所有内容 */
+}
